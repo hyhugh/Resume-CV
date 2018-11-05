@@ -1,0 +1,125 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{hyperref}
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\voffset}{0.1in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\paperheight}{11in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\textheight}{11in}
+\setlength{\textheight}{10in}
+\setlength{\topmargin}{-0.45in}
+\setlength{\textwidth}{7in}
+\setlength{\topskip}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+%-----------------------------------------------------------
+% \usepackage{fullpage}
+\usepackage{shading}
+%\textheight=9.0in
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \parashade[.9]{sharpcorners}{\textbf{#1 \vphantom{p\^{E}}}}}}
+\newcommand{\ressubheading}[4]{
+    \begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-6pt}}
+
+\newcommand{\award}[2]{
+    \begin{tabular*}{6.78in}{l@{\extracolsep{\fill}}r}
+        \text{#1} & \textit{#2} \\
+    \end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+    \textbf{\Large Yu Hou}  & \\
+    https://github.com/hyhugh &  hy1995@gmail.com \\
+    https://www.linkedin.com/in/yu-hou-8133b9108/ & yu.hou@unsw.edu.au
+\end{tabular*}
+\vspace{-10pt}
+
+\resheading{Education}
+\begin{itemize}
+    \item
+        \ressubheading{University of New South Wales}{Kensington, NSW}{Bachelor of Computer Science}{March. 2017 - Sep. 2019}
+        \begin{itemize}
+                \resitem{Graduated with High Distinction WAM 88 (GPA 3.95/4)}
+                \resitem{Relevant courses: Advanced Operating Systems, Distributed Systems, Programming Languages and Compilers}
+        \end{itemize}
+    \item
+        \ressubheading{University of New South Wales}{Kensington, NSW}{Bachelor of Computer Science (Honours)}{Oct. 2019 - present}
+        \begin{itemize}
+                \resitem{Thesis topic: Power management on seL4}
+        \end{itemize}
+\end{itemize}
+\vspace{-10pt}
+
+\resheading{Work Experience}
+\begin{itemize}
+    \item
+        \ressubheading{CSIRO's Data61}{}{Casual Operating Systems Engineer}{Feb. 2019 - present}
+        \begin{itemize}
+                \resitem{ Implemented a devicetree generator, which can be used to generate a sub-devicetree for partitioning devices for different guest VMs }
+                \resitem{ Worked on nested seL4 systems project, implemented IRQ control capability virtualization and resource management }
+                \resitem{ Worked on various build system(cmake) improvement projects }
+        \end{itemize}
+\end{itemize}
+\vspace{-10pt}
+
+\resheading{Notable Work}
+\begin{itemize}
+    \item
+        \ressubheading{Simple Operating System}{}{Advanced Operating Systems, COMP9242}{June. 2019 - Sep. 2019}
+        \begin{itemize}
+                \resitem{ Implemented a monolithic kernel on top of the seL4 microkernel }
+                \resitem{ Achieved the highest I/O throughput in class with carefully designed filesystem cache }
+        \end{itemize}
+
+    \item
+        \ressubheading{VC Compiler}{}{Programming Languages and Compilers, COMP3131}{Feb. 2019 - May. 2019}
+        \begin{itemize}
+                \resitem{ Implemented a simple C variant compiler frontend }
+                \resitem{ Implemented scanner, parser, type checker and code generator }
+                \resitem{ The code generator can generate Jasmin assembly code running on JVM }
+        \end{itemize}
+\end{itemize}
+
+\vspace{-10pt}
+
+\resheading{Awards}
+\begin{description}
+    \item
+        \award{COMP9242 Prize (for the best performance in COMP9242 Advanced Operating Systems)}{2019}
+    \item
+        \award{Faculty of Engineering Dean's Honours List}{2018}
+    \item
+        \award{UNSW Taste of Research Summer Scholarship}{2018}
+\end{description}
+
+\vspace{-10pt}
+
+\resheading{Skills}
+
+\begin{itemize}
+    \item
+        Proficient in C, Java, Python and Haskell, Familiar with C++
+    \item
+        Familiar with performance optimization and program profiling
+    \item
+        Strong low level programming/debugging skill
+
+\end{itemize}
+\end{document}
